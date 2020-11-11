@@ -85,7 +85,7 @@ const StakingContract = ({ handleConnect, history }) => {
         </div>
         <Tabs handleConnect={handleConnect} />
       </div>
-      <button className='back-button' onClick={() => history.goBack()}>back</button>
+      <button className='back-button' onClick={() => history.goBack()}>Back</button>
     </div>
   )
 }
