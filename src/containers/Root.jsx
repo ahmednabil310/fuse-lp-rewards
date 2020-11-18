@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router'
 import Header from '@/components/common/Header.jsx'
 import Footer from '@/components/common/Footer.jsx'
 import HomePage from '@/components/home'
+import RewardsPage from '@/components/rewards'
 import { getWeb3 } from '@/services/web3'
 import useWeb3Connect from '@/hooks/useWeb3Connect'
 import { connectToWallet } from '@/actions/network'
@@ -32,7 +33,8 @@ export default () => {
       <Header handleConnect={handleConnect} />
       <Switch>
         <Route path='/'>
-          <HomePage handleConnect={handleConnect} />
+      {/*<HomePage handleConnect={handleConnect} />*/}
+          <RewardsPage/>
         </Route>
       </Switch>
       <Footer />
