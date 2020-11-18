@@ -1,0 +1,81 @@
+.cards-container {
+  display: flex;
+}
+.reward-card {
+  position: relative;
+  margin-right: 2em;
+  width: 256px;
+  height: 439px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+.card-icons {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#card-icon {
+  height: 64px;
+}
+.card-title {
+  padding: 0 1em;
+  margin: 0.5em 0em;
+  font-size: 22px;
+  font-weight: 400;
+  color: #333333;
+}
+.card-section {
+  padding: 0 1em;
+  margin: 1.5em 0;
+}
+#section-label {
+  font-size: 9px;
+  line-height: 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+
+  color: #869aac;
+}
+#section-info {
+  font-size: 12px;
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+
+  color: #333333;
+}
+#section-apy {
+  font-size: 15px;
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+
+  color: #42b051;
+}
+.card-calender-label {
+  display: flex;
+}
+.card-calender-icon {
+  width: 12px;
+  margin-right: 0.2em;
+}
+.button-container {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card-button {
+  width: 224px;
+  height: 48px;
+  left: 16px;
+  top: 375px;
+  color: #fff;
+  background: #0f273c;
+  border-radius: 100px;
+}
