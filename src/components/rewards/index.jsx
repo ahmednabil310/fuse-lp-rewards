@@ -61,10 +61,14 @@ export default  ()=> {
 
     return (
         <div className="rewards-page">
+            <div className="rewards-headline">
+                <h1>Rewards Headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ut venenatis lacus nec mollis augue parturient justo. Tincidunt a, eu at sapien. Urna leo nascetur integer ultrices euismod eros. Tristique aliquam sed tristique tellus. Enim pellentesque sed tristique nulla diam, elementum justo, leo. </p>
+            </div>
             <div className="rewards-section">
                 <div className="rewards-section-title">
                     <img id="rewards-section-icon" src={ethIcon}></img>
-                    <h1 id="rewards-section-label">Rewards on Ethereum mainnet</h1>
+                    <h3 id="rewards-section-label">Rewards on Ethereum mainnet</h3>
                 </div>
                 <div className="cards-container">
                 {
@@ -87,7 +91,7 @@ export default  ()=> {
             <div className="rewards-section">
                 <div className="rewards-section-title">
                     <img id="rewards-section-icon" src={fuseIcon}></img>
-                    <h1 id="rewards-section-label">Rewards on Fuse blockchain</h1>
+                    <h3 id="rewards-section-label">Rewards on Fuse blockchain</h3>
                 </div>
                 <div className="cards-container">
                 {

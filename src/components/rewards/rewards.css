@@ -1,9 +1,13 @@
+.rewards-page {
+  background-color: #fbfafc;
+  padding: 3em 0 0 5em;
+}
 .cards-container {
   display: flex;
 }
 .reward-card {
   position: relative;
-  margin-right: 2em;
+  margin-right: 32px;
   width: 256px;
   height: 439px;
   background-color: #fff;
@@ -97,4 +101,21 @@
   line-height: 21px;
 
   color: #333333;
+}
+
+.rewards-headline h1 {
+  font-size: 30px;
+  line-height: 29px;
+  margin-bottom: 0.5em;
+  color: #333333;
+}
+
+.rewards-headline p {
+  width: 544px;
+  height: 125px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.rewards-headline {
+  margin-bottom: 3em;
 }
