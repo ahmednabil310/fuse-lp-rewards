@@ -1,5 +1,4 @@
 import React from 'react'
-import './rewards.css'
 import RewardCard from '@/components/rewards/RewardCard'
 import ethDaiIcon from '@/assets/images/coins-pair-eth-dai.svg'
 import ethUsdcIcon from '@/assets/images/coins-pair-eth-usdc.svg'
@@ -65,17 +64,17 @@ const fuseRewardCards = [
 export default  ()=> {
 
     return (
-        <div className="rewards-page">
-            <div className="rewards-headline">
+        <div className="rewards">
+            <div className="rewards__headline">
                 <h1>Rewards Headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ut venenatis lacus nec mollis augue parturient justo. Tincidunt a, eu at sapien. Urna leo nascetur integer ultrices euismod eros. Tristique aliquam sed tristique tellus. Enim pellentesque sed tristique nulla diam, elementum justo, leo. </p>
             </div>
-            <div className="rewards-section">
-                <div className="rewards-section-title">
-                    <img id="rewards-section-icon" src={ethIcon}></img>
-                    <h3 id="rewards-section-label">Rewards on Ethereum mainnet</h3>
+            <div className="rewards__section">
+                <div className="rewards__section__title">
+                    <img className="rewards__section__icon" src={ethIcon}></img>
+                    <h3 className="rewards__section__label">Rewards on Ethereum mainnet</h3>
                 </div>
-                <div className="cards-container">
+                <div className="rewards__cards-container">
                 {
                     ethRewardCards.map(card=>(
                         <RewardCard
@@ -93,12 +92,12 @@ export default  ()=> {
                     }
                 </div>
             </div>
-            <div className="rewards-section">
-                <div className="rewards-section-title">
-                    <img id="rewards-section-icon" src={fuseIcon}></img>
-                    <h3 id="rewards-section-label">Rewards on Fuse blockchain</h3>
+            <div className="rewards__section">
+                <div className="rewards__section__title">
+                    <img className="rewards__section__icon" src={fuseIcon}></img>
+                    <h3 className="rewards__section__label">Rewards on Fuse blockchain</h3>
                 </div>
-                <div className="cards-container">
+                <div className="rewards__cards-container">
                 {
                     fuseRewardCards.map(card=>(
                         <RewardCard
