@@ -10,6 +10,7 @@ import fuseIcon from '@/assets/images/fuse-token.svg'
 
 const ethRewardCards = [
     {
+        id:1,
         title:"ETH / FUSE",
         icon:ethFuseIcon,
         expDate:"16 November 2020",
@@ -19,6 +20,7 @@ const ethRewardCards = [
         isHot:false
     },
     {
+        id:2,
         title:"ETH / FUSE",
         icon:ethFuseIcon,
         expDate:"16 November 2020",
@@ -30,6 +32,7 @@ const ethRewardCards = [
 ];
 const fuseRewardCards = [
     {
+        id:3,
         title:"ETH / USDC",
         icon:ethUsdcIcon,
         expDate:"16 November 2020",
@@ -39,6 +42,7 @@ const fuseRewardCards = [
         isHot:false
     },
     {
+        id:4,
         title:"ETH / DAI",
         icon:ethDaiIcon,
         expDate:"16 November 2020",
@@ -48,6 +52,7 @@ const fuseRewardCards = [
         isHot:false
     },
     {
+        id:5,
         title:"ETH / WBTC",
         icon:ethWbtcIcon,
         expDate:"16 November 2020",

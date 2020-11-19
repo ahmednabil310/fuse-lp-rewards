@@ -32,10 +32,13 @@ export default () => {
     <>
       <Header handleConnect={handleConnect} />
       <Switch>
+      <Route path='/:id'>
+          <HomePage handleConnect={handleConnect} />
+        </Route>
         <Route path='/'>
-      {/*<HomePage handleConnect={handleConnect} />*/}
           <RewardsPage/>
         </Route>
+     
       </Switch>
       <Footer />
     </>

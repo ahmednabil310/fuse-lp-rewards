@@ -1,10 +1,14 @@
 import React from 'react'
-
+import { useHistory } from "react-router";
 import hotLabel from '@/assets/images/hot-label.svg'
 import calendar from '@/assets/images/calendar.svg'
 
 
 export default  ({title,id,icon,expDate,totalLockedValue,accuredRewards,apy,isHot})=> {
+    const history = useHistory();
+    const handleClick = (e) => {
+        history.push(`/${id}`);
+    };
     return (
         <div className="reward-card">
             <div className="card-icons">
@@ -33,7 +37,7 @@ export default  ({title,id,icon,expDate,totalLockedValue,accuredRewards,apy,isHo
             </div>
           <div className="button-container">
 
-                <button className="card-button">Submit</button>
+                <button className="card-button" onClick={handleClick}>Submit</button>
           </div>
    
         </div>
