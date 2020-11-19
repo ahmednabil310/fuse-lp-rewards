@@ -5,6 +5,9 @@ import ethDaiIcon from '@/assets/images/coins-pair-eth-dai.svg'
 import ethUsdcIcon from '@/assets/images/coins-pair-eth-usdc.svg'
 import ethWbtcIcon from '@/assets/images/coins-pair-eth-wbtc.svg'
 import ethFuseIcon from '@/assets/images/coins-pair-eth-fuse.svg'
+import ethIcon from '@/assets/images/eth.svg'
+import fuseIcon from '@/assets/images/fuse-token.svg'
+
 const ethRewardCards = [
     {
         title:"ETH / FUSE",
@@ -25,28 +28,84 @@ const ethRewardCards = [
         isHot:true
     }
 ];
+const fuseRewardCards = [
+    {
+        title:"ETH / USDC",
+        icon:ethUsdcIcon,
+        expDate:"16 November 2020",
+        totalLockedValue:"9,999,999.99 FUSE",
+        accuredRewards:"9,999,999.99 FUSE/BLOCK",
+        apy:"3.89%",
+        isHot:false
+    },
+    {
+        title:"ETH / DAI",
+        icon:ethDaiIcon,
+        expDate:"16 November 2020",
+        totalLockedValue:"9,999,999.99 FUSE",
+        accuredRewards:"9,999,999.99 FUSE/BLOCK",
+        apy:"3.89%",
+        isHot:false
+    },
+    {
+        title:"ETH / WBTC",
+        icon:ethWbtcIcon,
+        expDate:"16 November 2020",
+        totalLockedValue:"9,999,999.99 FUSE",
+        accuredRewards:"9,999,999.99 FUSE/BLOCK",
+        apy:"3.89%",
+        isHot:false
+    }
+];
 export default  ()=> {
 
     return (
         <div className="rewards-page">
-            <div className="cards-container">
-
-            {
-                ethRewardCards.map(card=>(
-                    <RewardCard
-                    title = {card.title}
-                    id={card.id}
-                    key={card.id}
-                    icon = {card.icon}
-                    expDate = {card.expDate}
-                    totalLockedValue = {card.totalLockedValue}
-                    accuredRewards = {card.accuredRewards}
-                    apy = {card.apy}
-                    isHot = {card.isHot}
-                    />
-                ))
-            }
-            
+            <div className="rewards-section">
+                <div className="rewards-section-title">
+                    <img id="rewards-section-icon" src={ethIcon}></img>
+                    <h1 id="rewards-section-label">Rewards on Ethereum mainnet</h1>
+                </div>
+                <div className="cards-container">
+                {
+                    ethRewardCards.map(card=>(
+                        <RewardCard
+                        title = {card.title}
+                        id={card.id}
+                        key={card.id}
+                        icon = {card.icon}
+                        expDate = {card.expDate}
+                        totalLockedValue = {card.totalLockedValue}
+                        accuredRewards = {card.accuredRewards}
+                        apy = {card.apy}
+                        isHot = {card.isHot}
+                        />
+                        ))
+                    }
+                </div>
+            </div>
+            <div className="rewards-section">
+                <div className="rewards-section-title">
+                    <img id="rewards-section-icon" src={fuseIcon}></img>
+                    <h1 id="rewards-section-label">Rewards on Fuse blockchain</h1>
+                </div>
+                <div className="cards-container">
+                {
+                    fuseRewardCards.map(card=>(
+                        <RewardCard
+                        title = {card.title}
+                        id={card.id}
+                        key={card.id}
+                        icon = {card.icon}
+                        expDate = {card.expDate}
+                        totalLockedValue = {card.totalLockedValue}
+                        accuredRewards = {card.accuredRewards}
+                        apy = {card.apy}
+                        isHot = {card.isHot}
+                        />
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )

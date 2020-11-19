@@ -15,21 +15,21 @@ export default  ({title,id,icon,expDate,totalLockedValue,accuredRewards,apy,isHo
             <div className="card-section">
                 <div className="card-calender-label">
                 <img className="card-calender-icon" src={calendar}></img>
-                    <h1 id="section-label">EXPIRE DATE</h1>
+                    <h1 id="card-section-label">EXPIRE DATE</h1>
                     </div>
-                <h1 id="section-info">{expDate}</h1>
+                <h1 id="card-section-info">{expDate}</h1>
             </div>
             <div className="card-section">
-                <h1 id="section-label">TOTAL LOCKED VALUE</h1>
-                <h1 id="section-info">{totalLockedValue}</h1>
+                <h1 id="card-section-label">TOTAL LOCKED VALUE</h1>
+                <h1 id="card-section-info">{totalLockedValue}</h1>
             </div>
             <div className="card-section">
-                <h1 id="section-label">ACCURED REWARDS</h1>
-                <h1 id="section-info">{accuredRewards}</h1>
+                <h1 id="card-section-label">ACCURED REWARDS</h1>
+                <h1 id="card-section-info">{accuredRewards}</h1>
             </div>
             <div className="card-section">
-                <h1 id="section-label">APY</h1>
-                <h1 id="section-apy">{apy}</h1>
+                <h1 id="card-section-label">APY</h1>
+                <h1 id="card-section-apy">{apy}</h1>
             </div>
           <div className="button-container">
 

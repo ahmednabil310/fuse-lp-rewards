@@ -30,7 +30,7 @@
   padding: 0 1em;
   margin: 1.5em 0;
 }
-#section-label {
+#card-section-label {
   font-size: 9px;
   line-height: 12px;
   letter-spacing: 0.3px;
@@ -38,7 +38,7 @@
 
   color: #869aac;
 }
-#section-info {
+#card-section-info {
   font-size: 12px;
   line-height: 16px;
 
@@ -47,12 +47,9 @@
 
   color: #333333;
 }
-#section-apy {
+#card-section-apy {
   font-size: 15px;
   line-height: 16px;
-
-  display: flex;
-  align-items: center;
 
   color: #42b051;
 }
@@ -78,4 +75,26 @@
   color: #fff;
   background: #0f273c;
   border-radius: 100px;
+  transition: 0.5s;
+}
+.rewards-section {
+  margin-bottom: 3em;
+}
+.card-button:hover {
+  background: #283e52;
+}
+.rewards-section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#rewards-section-icon {
+  width: 48px;
+  margin-right: 0.5em;
+}
+#rewards-section-label {
+  font-size: 22px;
+  line-height: 21px;
+
+  color: #333333;
 }
